@@ -1,0 +1,38 @@
+
+/*Navigation Tab*/
+.navbar {
+    background-color:#000000;
+    
+}
+
+.myLogo{
+    width:13%;
+    margin-left: 1rem;
+    margin-bottom: 4px;
+    padding-left: 5px;
+    padding-top: 4px;
+    padding-bottom: -3px;
+}
+.nav{
+    margin-right: 10px;
+    margin-top: -10px;
+    margin-bottom: -6px;
+}
+
+nav li{
+    margin-right: 6px;
+}
+
+.nav-link{
+    color:#35FFFF;
+    padding: 1.1rem;
+    border: none;
+    transition: 0.3s;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: rgb(31, 177, 187);
+    color:rgb(203, 239, 250);
+        }

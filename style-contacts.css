@@ -1,0 +1,119 @@
+
+/*Navigation Tab Style*/
+.navbar {
+    background-color:#000000;
+    padding-bottom: -8px;
+}
+
+
+.nav{
+    margin-right: 10px;
+    margin-top: -10px;
+    margin-bottom: -6px;
+    padding-bottom: -3px;
+}
+
+nav li{
+    margin-right: 6px;
+}
+
+a.nav-link{
+    color:#35FFFF;
+    padding: 17.6px 17.6px 17.6px 17.6px;
+
+    border: none;
+    transition: 0.3s;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+.myLogo{
+    width:13%;
+    margin-left: 1rem;
+    margin-bottom: 4px;
+    padding-left: 5px;
+    padding-top: 4px;
+    padding-bottom: -3px;
+}
+.nav-link:hover {
+    background-color: rgb(31, 177, 187);
+    color:rgb(203, 239, 250);
+}
+
+/*Footer Style*/
+footer{
+   
+    background-color: #343A40;
+    color: white;
+    font-size: 12px;
+    z-index: 10;
+    margin-top: 65rem;
+    z-index: 10;
+}
+/*Background style*/
+.Background{
+    opacity: .9;
+    background-image: url("assets/Artboard 1.png");
+    height: 1080px;
+    width: 100%;
+    background-attachment: fixed;
+    background-color: #464646;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    position: absolute;
+    
+}
+/*Social Media Link*/
+
+.fa {
+    margin: 2rem 10px;
+    padding: 30px;
+    width: 85px;
+    height: 84px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    background-color:rgb(93, 118, 173);
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-facebook::before {
+    font-size: 25px;
+  }
+  
+  .fa-twitter::before {
+    font-size: 25px;
+  }
+/*Contact*/
+.contact-sect{
+    margin-left: 8rem;
+    margin-top: 7rem;
+    margin-right: 8rem;
+    padding: 5rem 10rem 5rem 7rem;
+    background-color: #343A40;
+    color:white;
+    background-blend-mode: normal;
+   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1{
+    padding-bottom: 1rem;
+}
+ul li{
+    font-family: Helvetica;
+    text-decoration: none;
+    list-style: none;
+}

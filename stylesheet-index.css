@@ -1,0 +1,188 @@
+
+.body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*Navigation Tab*/
+.navbar {
+    background-color:#000000;
+    
+}
+
+.myLogo{
+    width:13%;
+    margin-left: 1rem;
+    margin-bottom: 4px;
+    padding-left: 5px;
+    padding-top: 4px;
+    padding-bottom: -3px;
+}
+.nav{
+    margin-right: 10px;
+    margin-top: -10px;
+    margin-bottom: -6px;
+}
+
+nav li{
+    margin-right: 6px;
+}
+
+.nav-link{
+    color:#35FFFF;
+    padding: 1.1rem;
+    border: none;
+    transition: 0.3s;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: rgb(31, 177, 187);
+    color:rgb(203, 239, 250);
+}
+
+/*First Section(Welcome Section)*/
+
+#intro{
+    position: fixed;
+    z-index: -2;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.welcomeT{
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 2s;
+}
+
+.container-welc{
+    padding-top: 60px;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    
+}
+.container-welc h1{
+    font-size: 3.5rem;
+    margin-bottom: -9px;
+}
+.container-welc p{
+    font-size: 24px;
+    text-align: left;
+    padding-left: .4rem;
+    padding-top: -14px;
+
+}
+.imgInpage{
+    width: 60%;
+    z-index: 2;
+    margin-right: 4rem;
+    padding-right: 2rem;
+    transition:  .5s;
+    
+}
+
+
+
+.details{
+    margin-top: 1rem;
+    padding-top: 2rem;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    overflow: hidden;
+}
+
+/*About Section*/
+#aboutme-sect{
+
+    margin-top: 50rem;
+    background-color: #45C8E9;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+
+}
+.about{
+    display: flex;
+    overflow: hidden;
+    margin-left: 4rem;
+    margin-right: 5rem;
+    padding-right: 1rem;
+}
+.myimage{
+    width: 50%;
+   
+  
+    margin-left: 4rem;
+}
+.content-about{
+    padding-right: 4rem;
+    text-align: left;
+}
+.content-about p{
+    font-size: 16px;
+}
+.content-about h3{
+    font-size: 3rem;
+}
+.learnButton{
+    text-decoration: none;
+    background-color: rgb(52, 149, 173);
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    
+}
+.learnv{
+    text-align: center;
+    margin-top: 6rem;
+}
+
+
+/*Project Section/ Cards*/
+#project-sect{
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    background-color: white;
+}
+#project-sect .details{
+    white-space: nowrap;
+}
+#project-sect .details .cardslot1{
+   
+   
+    margin-left: 4rem;
+    text-align: center;
+    white-space: normal;
+}
+.sect-label{
+ 
+    margin-top: 5rem;
+    text-align: center;
+}
+.sepacard{
+    display: flex;
+    text-align: center;
+    margin-left: 2.1rem;
+    margin-right: 4;
+    
+}
+.sepacard > .cardslot1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*Footer*/
+footer{
+   
+    background-color: #343A40;
+    color: white;
+    font-size: 12px;
+    z-index: 10;
+}

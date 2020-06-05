@@ -1,0 +1,97 @@
+.Background{
+    opacity: .9;
+    background-image: url("assets/Artboard 1.png");
+    height: 1080px;
+    background-attachment: fixed;
+    background-color: #464646;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    position: absolute;
+    z-index: -2;
+}
+
+/*Navigation Tab*/
+.navbar{
+    background-color: black;
+}
+.nav{
+    margin-right: 10px;
+    margin-top: -10px;
+    margin-bottom: -6px;
+}
+
+nav li{
+    margin-right: 6px;
+}
+
+.nav-link{
+    color:#35FFFF;
+    padding: 1.1rem;
+    border: none;
+    transition: 0.3s;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: rgb(31, 177, 187);
+    color:rgb(203, 239, 250);
+}
+.logo{
+    width:13%;
+    margin-left: 1rem;
+    margin-bottom: 4px;
+    padding-left: 5px;
+    padding-top: 4px;
+    padding-bottom: -3px;
+}
+/*About Section*/
+.cover {
+    background-color:#343A40;
+    
+}
+.cover::after {
+    background-color: rgb(163, 206, 206);
+    opacity: 0.5;
+} 
+.content {
+    text-align: left;
+    opacity: 1;
+    margin-top: 5rem;
+    padding: 2rem 8.2rem 2rem 8.2rem;
+    color: white;
+    
+}
+/*Table Section*/
+.sect-table{
+    margin: 5% 10% 5% 10%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+table > tr{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.secret:hover{
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+.secret{
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+/*Footer*/
+footer{
+   
+    background-color: #343A40;
+    color: white;
+    font-size: 12px;
+    z-index: 10;
+    margin-top: 65rem;
+}
+
+
