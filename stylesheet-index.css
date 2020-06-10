@@ -7,7 +7,9 @@
     background-color:#000000;
     
 }
-
+.drop{
+    display: none;
+}
 .myLogo{
     width:13%;
     margin-left: 1rem;
@@ -185,4 +187,260 @@ footer{
     color: white;
     font-size: 12px;
     z-index: 10;
+}
+
+@media only screen and (max-width: 750px) {
+    .nav-bar {
+        display: none;
+    }
+    .togg{
+        width: 2rem;
+       
+    }
+    .drop{
+        display: flex;
+    }
+    .sepacard{
+        display: none;
+    }
+    #intro{
+       /* position: fixed;?*/
+        z-index: -2;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 0rem;
+        padding-top: 1rem;
+    }
+    .welcomeT{
+        display: inline;
+        white-space: nowrap;;
+       overflow: hidden;
+       text-align: center;
+    }
+    
+   
+    .container-welc{
+        padding-top: 0px;
+        margin-top: 0rem;
+        margin-left: -3rem;
+        
+        
+    }
+    .container-welc h1{
+        size:80%;
+        font-size: 2.5rem;
+        margin-bottom: -9px;
+    }
+    .container-welc p{
+        font-size: 1rem;
+        text-align: center;
+        padding-left: 0rem;
+        padding-top: -14px;
+        
+    }
+    .imgInpage{
+        width: 35rem;
+        z-index: -1;
+        margin-left: 0rem;
+        padding-left: 0rem;
+        margin-right: 0rem;
+        padding-right: 0rem;
+        transition:  .5s;
+        
+    }
+    
+    
+    
+    .details{
+        margin-top: 1rem;
+        padding-top: 2rem;
+        margin-left: 3rem;
+        margin-bottom: 1rem;
+        display: flex;
+        overflow: hidden;
+    }
+    /*About Section*/
+#aboutme-sect{
+
+    margin-top: 50rem;
+    background-color: #45C8E9;
+    padding-left: 1rem;
+    padding-bottom: 3rem;
+
+}
+.about{
+    display: flex;
+    overflow: hidden;
+    margin-left: 2rem;
+    margin-right: -1rem;
+    padding-right: 1rem;
+}
+.myimage{
+    width: 50%;
+   
+  
+    margin-left: 0rem;
+}
+.content-about{
+    padding-right: 0rem;
+    text-align: left;
+}
+.content-about p{
+    font-size: 16px;
+}
+.content-about h3{
+    font-size: 3rem;
+}
+.learnButton{
+    text-decoration: none;
+    background-color: rgb(8, 44, 53);
+    border: none;
+    color: white;
+    padding: 10px 28px 12px;
+    text-align: center;
+    font-size: 13px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.learnv{
+    text-align: center;
+    margin-top: 4rem;
+    padding-bottom: 12px;
+    text-decoration: none;
+}
+
+}
+@media only screen and (max-width: 600px) {
+    .nav-link dropdown-toggle{
+        
+    }
+    .nav-bar {
+        display: none;
+    }
+    .togg{
+        width: 2rem;
+       
+    }
+  
+    .drop{
+        display: flex;
+    }
+    .sepacard{
+        display: none;
+    }
+    #intro{
+       /* position: fixed;?*/
+        z-index: -2;
+        margin-bottom: 1rem;
+        margin-left: -3rem;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+    .welcomeT{
+        display: inline;
+        white-space: nowrap;;
+       overflow: hidden;
+       text-align: center;
+    }
+    
+   
+    .container-welc{
+        padding-top: 0px;
+        margin-top: 0rem;
+        margin-left: -3rem;
+        
+        
+    }
+    .container-welc h1{
+        size:80%;
+        font-size: 2.5rem;
+        margin-bottom: -9px;
+    }
+    .container-welc p{
+        font-size: 1rem;
+        text-align: center;
+        padding-left: 0rem;
+        padding-top: -14px;
+        
+    }
+    .imgInpage{
+        width: 35rem;
+        z-index: -1;
+        margin-left: 0rem;
+        padding-left: 2rem;
+        margin-right: 0rem;
+        padding-right: 2rem;
+        transition:  .5s;
+        
+    }
+    
+    
+    
+    .details{
+        margin-top: 1rem;
+        padding-top: 2rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        overflow: hidden;
+    }
+    /*About Section*/
+    #aboutme-sect{
+
+        margin-top: 50rem;
+        background-color: #45C8E9;
+        padding-left: 1rem;
+        padding-bottom: 3rem;
+
+    }
+    .about{
+        display: flex;
+        overflow: hidden;
+        margin-left: 2rem;
+        margin-right: -1rem;
+        padding-right: -2rem;
+    }
+    .myimage{
+        width: 80%;
+        white-space: nowrap;
+    
+        margin-left: -1rem;
+    }
+    .content-about{
+        padding-right: 2rem;
+        text-align: left;
+    }
+    .content-about p{
+        font-size: 16px;
+    }
+    .content-about h3{
+        font-size: 3rem;
+    }
+    .learnButton{
+        text-decoration: none;
+        background-color: rgb(8, 44, 53);
+        border: none;
+        color: white;
+        padding: 10px 28px 12px;
+        text-align: center;
+        font-size: 13px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+    .learnv{
+        text-align: center;
+        margin-top: 4rem;
+        padding-bottom: 12px;
+        text-decoration: none;
+    }
+
+
 }
