@@ -56,15 +56,16 @@ nav li{
 }
 .welcomeT{
     display: flex;
-    white-space: nowrap;
-    overflow: hidden;
+    justify-content: center;
+    align-self:center;
+    
     transition: 2s;
 }
 
 .container-welc{
     padding-top: 60px;
-    margin-top: 5rem;
-    margin-left: 3rem;
+    flex-shrink: 1;
+    margin: 3rem;
     
 }
 .container-welc h1{
@@ -82,9 +83,9 @@ nav li{
     width: 60%;
     z-index: 2;
     margin-right: 4rem;
-    padding-right: 2rem;
+    padding-right: 9rem;
     transition:  .5s;
-    
+    flex-shrink: 0;
 }
 
 
@@ -94,7 +95,7 @@ nav li{
     padding-top: 2rem;
     margin-left: 4rem;
     margin-bottom: 1rem;
-    display: flex;
+   
     overflow: hidden;
 }
 
@@ -116,8 +117,6 @@ nav li{
 }
 .myimage{
     width: 50%;
-   
-  
     margin-left: 4rem;
 }
 .content-about{
@@ -148,37 +147,60 @@ nav li{
     margin-top: 6rem;
 }
 
-
 /*Project Section/ Cards*/
 #project-sect{
-    padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding: 3rem;
     background-color: white;
 }
-#project-sect .details{
-    white-space: nowrap;
-}
-#project-sect .details .cardslot1{
-   
-   
-    margin-left: 4rem;
-    text-align: center;
-    white-space: normal;
-}
+
 .sect-label{
- 
-    margin-top: 5rem;
     text-align: center;
 }
 .sepacard{
     display: flex;
-    text-align: center;
-    margin-left: 2.1rem;
-    margin-right: 4;
-    
+    justify-content: center;
+    flex-flow: wrap;
 }
 .sepacard > .cardslot1{
+    margin: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*gallery*/
+.gallery{
+    background-color: rgb(44, 44, 44);
+    color: white;
+ 
+  
+   
+}
+.gallery h3{
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    margin: 0px -15px 0px -15px;
+}
+.row{
+    justify-self: center; 
+   align-self: center;
+   width: 1080px;
+   display: flex;
+   flex-flow: row;
+}
+
+.col-sm-4 > img{
+    width: 350px; /* width of container */
+    height: 300px; /* height of container */
+   
+    object-fit: cover; 
+    justify-self: center; 
+}
+.row > .col-sm-4{
+    padding: 0px -15px 0px -15px;
+   
+    width: 200px; /* width of container */
+    position: inherit;
+   
+    flex-wrap: wrap;
 }
 /*Footer*/
 footer{
@@ -189,7 +211,7 @@ footer{
     z-index: 10;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
     .nav-bar {
         display: none;
     }
@@ -315,9 +337,7 @@ footer{
 
 }
 @media only screen and (max-width: 600px) {
-    .nav-link dropdown-toggle{
-        
-    }
+  
     .nav-bar {
         display: none;
     }
@@ -336,7 +356,7 @@ footer{
        /* position: fixed;?*/
         z-index: -2;
         margin-bottom: 1rem;
-        margin-left: -3rem;
+        margin-left: 1rem;
         margin-top: 1rem;
         padding-bottom: 1rem;
         padding-left: 1rem;

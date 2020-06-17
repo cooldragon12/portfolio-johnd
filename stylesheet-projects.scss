@@ -1,33 +1,55 @@
-$navcolor:black;
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,700');
+
+$white: #fff;
+$black: #2e2e2e;
+$gray: #9b9a9a;
+$highlight: rgb(31, 177, 187);
+$footer: #343A40;
+$onerem:1rem;
 $marp:4px;
 $marg:10px;
+$colorb:#35FFFF;
+$image_container:1000px;
+$md: 786px;
+
 /*Navigation Tab*/
 .navbar {
-    background-color:navcolor;
+    background-color:black;
     
 }
 
 .myLogo{
     width:13%;
-    margin-left: 1rem;
+    margin-left: onerem;
     margin-bottom: marp;
     padding-left: 5px;
     padding-top: marp;
-    padding-bottom: -3px;
+    padding-bottom: marp;
 }
 .nav{
     margin-right: marg;
     margin-top: -marg;
     margin-bottom: -6px;
+
 }
 
-nav li{
-    margin-right: 6px;
+nav {
+    padding: 3rem 0 3rem 0;
+  ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+  li {
+    font-size: $onerem;
+    
+      padding: .1rem;
+  
+  }
 }
 
 .nav-link{
-    color:#35FFFF;
-    padding: 1.1rem;
+    color:$colorb;
+    padding: 1rem;
     border: none;
     transition: 0.3s;
     font-family: Helvetica;
@@ -37,4 +59,172 @@ nav li{
 .nav-link:hover {
     background-color: rgb(31, 177, 187);
     color:rgb(203, 239, 250);
+}
+
+
+
+
+#main-body{
+    justify-content: center;
+    margin: 1rem 5rem 1rem 5rem;
+    padding: 1rem;
+}
+
+button {
+    font-size: 18px;
+}
+
+/*=============Gallery=============*/
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: $gray;
+  background: $white;
+  text-rendering: optimizeLegibility;
+}
+
+ul li {
+  margin: 0 1.5rem 0 0;
+}
+
+a {
+  color: $gray;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  &:hover {
+    color: $black;
+  }
+  &.active {
+    color: $black;
+  }
+}
+
+
+
+#highlight {
+  color: $highlight;
+  font-size: 1.25rem;
+}
+
+.gallery {
+  padding: 0 0 0rem 0;
+  display: flex;
+}
+
+.img-container {
+    width: 60%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    &:hover .img-content-hover {
+        display: flex;
+    }
+}
+
+#main-body h1{
+    text-align: center;
+    margin:2rem;
+    font-size: 3rem;
+}
+.project-item1 img{
+    width: 50%;
+    text-align: center;
+}
+.project-item1 p{
+    text-indent: $onerem + 1;
+    margin: $onerem;
+}
+.project-item1 h2{
+    padding: $onerem;
+    margin: $onerem;
+
+}
+.projectbar{
+    justify-content: center;
+}
+figure img {
+    width: 100%;
+    height: 500px;
+	object-fit: cover;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.img-content-hover {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  display: none;
+  padding: 1rem;
+  background: $white;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  margin-left: -2rem;
+}
+
+.title {
+  color: $black;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.category {
+  font-size: 1rem;
+  color: $gray;
+}
+
+.img-content {
+  display: none;
+}
+
+footer {
+  
+  background: $footer;
+  color:$white;
+  text-align: center;
+  font-size: 12px;
+}
+
+@supports (display: grid) {
+  .gallery .grid {
+        grid-gap: 1rem;
+       
+    }
+}
+
+@media(min-width: $md) {
+  nav ul {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  img:hover {
+    transform: none;
+  }
+  
+  .img-container {
+    height: 100%;
+    &:hover .img-content-hover {
+        display: none;
+    }
+  }
+
+  .img-content {
+    display: block;
+    padding: 1rem 0;
+  }
 }

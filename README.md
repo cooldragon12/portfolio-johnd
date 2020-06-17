@@ -14,7 +14,7 @@ There are 4 pages in the website:
 -Home
 	- contains the sections that introduce every pages.
 -Contact
-	- contains social and contact
+	- contains social and contact details
 -Projects
 	- might contain the projects and photos/gallery
 -About

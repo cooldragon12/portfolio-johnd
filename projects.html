@@ -2,35 +2,52 @@
 <html>
     <head>
         <title>Projects</title>
-        <link rel="stylesheet" href="stylesheet-projects.scss">
+    
+       
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="icon" href="assets/Isometric Room angle.svg">
+        <link rel="stylesheet" href="stylesheet-projects.css">
+        <script>
+            const imgContent = document.querySelectorAll('.img-content-hover');
+
+            function showImgContent(e) {
+                for(var i = 0; i < imgContent.length; i++) {
+                     x = e.pageX;
+                        y = e.pageY;
+                imgContent[i].style.transform = `translate3d(${x}px, ${y}px, 0)`;
+                }
+            };
+
+            document.addEventListener('mousemove', showImgContent);
+        </script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar bg-black">
             <img src="assets/alogo.png" class="myLogo"alt="logo-main">
             <div class="nav-bar">
                 
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="about-page.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="Contacts.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
        
         <div id="main-body">
-            <h1> My Proojects </h1>
+            <h1> My Projects </h1>
             <div class="projectbar">
                 <section class = "project-item1">  
-                    <img scr="" class="img-project" alt="img-project">
+                    <img src="assets/project-img.png" class="img-project" alt="img-project">
                     <h2>Teachers' Scheduling Sytem</h2>
                     <p>This project was made for the teachers' schedule since they having a problem in Scheduling each classroom and subject for the students. 
                         This system is able help teacher to create the desire time without conflicting with other factors such as the time, subject, room, and section of the student</p> 
@@ -38,15 +55,98 @@
                 </section>
             </div>
             <div class="projectbar">
-                <section class = "project-item2">  
-                    <img scr="" class="img-project" alt="img-project">
-                    <h2>Teachers' Scheduling Sytem</h2>
+                <section class = "project-item1">  
+                    <h2>Photo Project</h2>
                     <p>This project was made for the teachers' schedule since they having a problem in Scheduling each classroom and subject for the students. 
                         This system is able help teacher to create the desire time without conflicting with other factors such as the time, subject, room, and section of the student</p> 
                 </section>
             </div>
         </div>
-       
+        <section class="gallery">
+            <div class="container">
+                <div class="grid">
+                   
+                    <div class="column-xs-12 column-md-4">
+                        <figure class="img-container">
+                            <img src="assets/photos/art.jpg" />
+                            <figcaption class="img-content">
+                                <h2 class="title">Ky</h2>
+                                <h3 class="category">Digital Paint</h3>
+                            </figcaption>
+                                <span class="img-content-hover">
+                                    <h2 class="title">Ku</h2>
+                                    <h3 class="category">Digital Paint</h3>
+                                </span>
+                            </figure>
+                    </div>
+                    <div class="column-xs-12 column-md-4">
+          <figure class="img-container">
+            <img src="assets/photos/cac.jpg" />
+            <figcaption class="img-content">
+              <h2 class="title">Cactea Summer</h2>
+              <h3 class="category">Plants</h3>
+            </figcaption>
+            <span class="img-content-hover">
+              <h2 class="title">Cactea Summer</h2>
+              <h3 class="category">Plants</h3>
+            </span>
+          </figure>
+                    </div>
+                    <div class="column-xs-12 column-md-6">
+          <figure class="img-container">
+            <img src="assets/photos/glow.jpg">
+            <figcaption class="img-content">
+              <h2 class="title">Glow Space</h2>
+              <h3 class="category">Showcasw</h3>
+            </figcaption>
+            <span class="img-content-hover">
+              <h2 class="title">Glow Space</h2>
+              <h3 class="category">Showcase</h3>
+            </span>
+          </figure>
+                    </div>
+                    <div class="column-xs-12 column-md-4">
+          <figure class="img-container">
+            <img src="assets/photos/stars.jpg" />
+            <figcaption class="img-content">
+              <h2 class="title">Stars</h2>
+              <h3 class="category">Star Gaze</h3>
+            </figcaption>
+            <span class="img-content-hover">
+              <h2 class="title">Stars</h2>
+              <h3 class="category">Star Gaze</h3>
+            </span>
+          </figure>
+                    </div>
+                    <div class="column-xs-12 column-md-6">
+          <figure class="img-container">
+            <img src="assets/photos/IMG_20190806_210722.jpg" />
+            <figcaption class="img-content">
+              <h2 class="title">My Wand</h2>
+              <h3 class="category">Glow on Me</h3>
+            </figcaption>
+            <span class="img-content-hover">
+              <h2 class="title">My Wand</h2>
+              <h3 class="category">Glow on Me</h3>
+            </span>
+          </figure>
+                    </div>
+                    <div class="column-xs-12">
+          <figure class="img-container">
+            <img src="assets/portrait.jpeg" />
+            <figcaption class="img-content">
+              <h2 class="title">Alone</h2>
+              <h3 class="category">Leaves High</h3>
+            </figcaption>
+            <span class="img-content-hover">
+              <h2 class="title">Alone</h2>
+              <h3 class="category">Leaves High</h3>
+            </span>
+          </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
         
     </body>
     <footer>
