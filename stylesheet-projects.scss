@@ -9,7 +9,7 @@ $onerem:1rem;
 $marp:4px;
 $marg:10px;
 $colorb:#35FFFF;
-$image_container:1000px;
+
 $md: 786px;
 
 /*Navigation Tab*/
@@ -73,7 +73,27 @@ nav {
 button {
     font-size: 18px;
 }
-
+#main-body h1{
+  text-align: center;
+  margin:2rem;
+  font-size: 3rem;
+}
+.img-project{
+  width: 50%;
+  text-align: center;
+}
+.project-item1 p{
+  text-indent: $onerem + 1;
+  margin: $onerem;
+}
+.project-item1 h2{
+  padding: $onerem;
+  margin: $onerem;
+text-align: center;
+}
+.projectbar{
+  justify-content: center;
+}
 /*=============Gallery=============*/
 * {
   box-sizing: border-box;
@@ -115,12 +135,12 @@ a {
 }
 
 .gallery {
-  padding: 0 0 0rem 0;
-  display: flex;
+  padding: 0 0 1.15rem 0;
+
 }
 
 .img-container {
-    width: 60%;
+    width: 100%;
     height: 500px;
     overflow: hidden;
     display: flex;
@@ -129,31 +149,11 @@ a {
     }
 }
 
-#main-body h1{
-    text-align: center;
-    margin:2rem;
-    font-size: 3rem;
-}
-.project-item1 img{
-    width: 50%;
-    text-align: center;
-}
-.project-item1 p{
-    text-indent: $onerem + 1;
-    margin: $onerem;
-}
-.project-item1 h2{
-    padding: $onerem;
-    margin: $onerem;
 
-}
-.projectbar{
-    justify-content: center;
-}
 figure img {
     width: 100%;
     height: 500px;
-	object-fit: cover;
+	  object-fit: cover;
     transform: scale(1);
     transition: all 0.3s ease-in-out;
     &:hover {
@@ -162,7 +162,7 @@ figure img {
 }
 
 .img-content-hover {
-  z-index: 1;
+  z-index: 3;
   position: absolute;
   top: 0;
   left: 0;
@@ -200,9 +200,9 @@ footer {
 
 @supports (display: grid) {
   .gallery .grid {
-        grid-gap: 1rem;
-       
-    }
+    grid-gap: 1rem;
+    
+  }
 }
 
 @media(min-width: $md) {
@@ -226,5 +226,129 @@ footer {
   .img-content {
     display: block;
     padding: 1rem 0;
+  }
+}
+/* 12columns.css | Created by Katherine Kato | Released under the MIT license */
+/* GitHub: https://kathykato.github.io/12columns/ */
+
+$grid-columns: 12;
+
+$sm: 48rem;
+$md: 62rem;
+$lg: 75rem;
+
+.container {
+  margin: auto;
+  padding: 0 1rem;
+  max-width: 71.25rem;
+  width: 100%;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  > [class*="column-"] {
+    display: block;
+  }
+}
+
+.first {
+  order: -1;
+}
+
+.last {
+  order: 12;
+}
+
+.align-top {
+  align-items: start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-bottom {
+  align-items: end;
+}
+
+@for $i from 1 through $grid-columns {
+  .column-xs-#{$i} {
+    flex-basis: $i / $grid-columns * 100%;
+    max-width: $i / $grid-columns * 100%;
+  }
+}
+
+@media (min-width: $sm) {
+  @for $i from 1 through $grid-columns {
+    .column-sm-#{$i} {
+      flex-basis: $i / $grid-columns * 100%;
+      max-width: $i / $grid-columns * 100%;
+    }
+  }
+}
+
+@media (min-width: $md) {
+  @for $i from 1 through $grid-columns {
+    .column-md-#{$i} {
+      flex-basis: $i / $grid-columns * 100%;
+      max-width: $i / $grid-columns * 100%;
+    }
+  }
+}
+
+@media (min-width: $lg) {
+  @for $i from 1 through $grid-columns {
+    .column-lg-#{$i} {
+      flex-basis: $i / $grid-columns * 100%;
+      max-width: $i / $grid-columns * 100%;
+    }
+  }
+}
+
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    > [class*="column-"] {
+      margin: 0;
+      max-width: 100%;
+    }
+  }
+
+  @for $i from 1 through $grid-columns {
+    .column-xs-#{$i} {
+      grid-column-start: span #{$i};
+      grid-column-end: span #{$i};
+    }
+  }
+
+  @media(min-width: $sm) {
+    @for $i from 1 through $grid-columns {
+      .column-sm-#{$i} {
+        grid-column-start: span #{$i};
+        grid-column-end: span #{$i};
+      }
+    }
+  }
+
+  @media(min-width: $md) {
+    @for $i from 1 through $grid-columns {
+      .column-md-#{$i} {
+        grid-column-start: span #{$i};
+        grid-column-end: span #{$i};
+      }
+    }
+  }
+
+  @media(min-width: $lg) {
+    @for $i from 1 through $grid-columns {
+      .column-lg-#{$i} {
+        grid-column-start: span #{$i};
+        grid-column-end: span #{$i};
+      }
+    }
   }
 }

@@ -2,24 +2,12 @@
 <html>
     <head>
         <title>Projects</title>
-    
-       
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+        <link rel="stylesheet" href="https://codepen.io/kathykato/pen/57f0b5b76e6aa7e4917e08b81d378d7b">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="icon" href="assets/Isometric Room angle.svg">
         <link rel="stylesheet" href="stylesheet-projects.css">
-        <script>
-            const imgContent = document.querySelectorAll('.img-content-hover');
-
-            function showImgContent(e) {
-                for(var i = 0; i < imgContent.length; i++) {
-                     x = e.pageX;
-                        y = e.pageY;
-                imgContent[i].style.transform = `translate3d(${x}px, ${y}px, 0)`;
-                }
-            };
-
-            document.addEventListener('mousemove', showImgContent);
-        </script>
+        <script src="gallary.js"></script>
     </head>
     <body>
         <nav class="navbar bg-black">
@@ -42,7 +30,7 @@
                 </ul>
             </div>
         </nav>
-       
+        <section class="descriptiom">
         <div id="main-body">
             <h1> My Projects </h1>
             <div class="projectbar">
@@ -62,11 +50,12 @@
                 </section>
             </div>
         </div>
+      </section>
         <section class="gallery">
             <div class="container">
                 <div class="grid">
                    
-                    <div class="column-xs-12 column-md-4">
+                    <div class="column-xs-12 column-md-6">
                         <figure class="img-container">
                             <img src="assets/photos/art.jpg" />
                             <figcaption class="img-content">
